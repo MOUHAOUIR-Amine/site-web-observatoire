@@ -1,0 +1,107 @@
+<%- include("partials/header"); -%>
+
+<div class="container">
+
+
+    <form class="well form-horizontal" action="/register" method="post"  id="contact_form">
+
+<fieldset>
+
+<!-- Form Name -->
+<legend><center><h2><b>Formule d'inscription</b></h2></center></legend><br>
+
+<!-- Text input-->
+
+<div class="form-group">
+
+  <%- include("partials/messages") -%>
+  <label class="col-md-4 control-label" >Nom</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="nom" placeholder="Nom de famille" class="form-control"  type="text" value="<%= typeof nom != 'undefined' ? nom : '' %>">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Prénom</label>
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="prenom" placeholder="Prénom" class="form-control"  type="text" value="<%= typeof prenom != 'undefined' ? prenom : '' %>">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+
+
+<!-- Text input-->
+
+<!-- Text input-->
+
+  <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="username" placeholder="Adresse électronique" class="form-control"  type="email" value="<%= typeof email != 'undefined' ? email : '' %>">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Mot de passe</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="fas fa-lock"></i></span>
+  <input name="password" placeholder="Mot de passe" class="form-control"  type="password" value="<%= typeof password != 'undefined' ? password : '' %>">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Confirmer votre mot de passe</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="fas fa-lock"></i></span>
+  <input name="password2" placeholder="Confirmer votre mot de passe" class="form-control"  type="password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4"><br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" ><i class="fas fa-user-plus"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSign-Up&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+  </div>
+
+</div>
+<p class="lead mt-4">Have An Account? <a href="/login">Login</a></p>
+</fieldset>
+
+
+</form>
+
+
+    </div><!-- /.container -->
+
+
+<%- include("partials/footer"); -%>

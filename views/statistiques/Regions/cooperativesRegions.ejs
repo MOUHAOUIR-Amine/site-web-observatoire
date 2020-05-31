@@ -1,0 +1,31 @@
+  <%- include("../../partials/headerStatistiques"); -%>
+
+    <div class="container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+<script src="../statistiquesJS/Regions/cooperativesRegions.js">
+
+
+
+
+<%- include("../../partials/footer"); -%>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#sidebarCollapse').on('click', function() {
+      $('#sidebar').toggleClass('active');
+      $(this).toggleClass('active');
+    });
+  });
+</script>

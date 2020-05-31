@@ -1,0 +1,176 @@
+<%- include("partials/header"); -%>
+
+<div class="container">
+
+
+  <form class="well form-horizontal" action="/enregister_cooperative" method="post" id="contact_form">
+
+    <fieldset>
+
+      <!-- Form Name -->
+      <legend>
+        <center>
+          <h2><b>Formule d'enregistrement de coopertatives</b></h2>
+        </center>
+      </legend><br>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+
+        <%- include("partials/messages") -%>
+
+        <label class="col-md-4 control-label">Nom de la cooperative</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="nomCoop" placeholder="Last Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Numero de TPI</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="numTPI" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Adresse de la cooperative</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="address" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Nombre d'adherents</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="numAdherents" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">dont personnes femenins</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="numFemmes" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input -->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Telephone</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="telephone" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Secteur d'activite</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="secteurActivite" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Branche</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="branche" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Region</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="region" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Province</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="province" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Nom complet du president</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="nomPresident" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Telephone du president</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="presidentPhone" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+          </div>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-4"><br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSign-Up <span
+              class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+        </div>
+
+      </div>
+
+    </fieldset>
+
+
+  </form>
+
+
+</div><!-- /.container -->
+
+
+<%- include("partials/footer"); -%>

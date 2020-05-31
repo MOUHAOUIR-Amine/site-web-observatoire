@@ -1,0 +1,53 @@
+<%- include("../../partials/headerStatistiques"); -%>
+
+
+<form action="/selectionnerAnneeRegionsLaureats" method="post">
+    <div class="form-group">
+
+      <div class="col-md-4 selectContainer">
+        <label >Annee: </label>
+      <div class="input-group">
+      <select name="annee" class="form-control selectpicker">
+        <option value="">Choisissez votre annee</option>
+        <option>2020</option>
+        <option>2019</option>
+        <option >2018</option>
+        <option >2017</option>
+        <option >2016</option>
+        <option >2015</option>
+        <option >2014</option>
+        <option >2013</option>
+        <option >2012</option>
+      </select>
+
+      <button type="submit" class="btn btn-primary" > Recherche</button>
+
+    </div>
+
+    </div>
+    </div>
+    </form>
+
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<%- include("../../partials/footer"); -%>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#sidebarCollapse').on('click', function() {
+      $('#sidebar').toggleClass('active');
+      $(this).toggleClass('active');
+    });
+  });
+</script>

@@ -1,0 +1,70 @@
+  <%- include("../partials/headerStatistiques"); -%>
+
+
+  <div class="row">
+
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <a href="/selectionnerAnneeSecteurs" class="card-link">
+            <h3 class="card-title">Statistiques par secteur d'activités</h3>
+            <br>
+            <br>
+            <img src="img/teamwork.png" alt="" class="imgteamwork">
+            <br>
+            <br>
+            <p class="card-text">Toutes les statistiques concernant les secteurs d’activites des cooperatives au Maroc sont disponibles ici.</p>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <a href="/selectionnerAnneeRegions" class="card-link">
+            <h3 class="card-title">Statistiques par region</h3>
+            <br>
+            <br>
+            <img src="img/morocco.png" alt="" class="imgmorroco">
+            <br>
+            <br>
+            <p class="card-text">Toutes les statistiques des cooperatives par region du Maroc sont disponibles ici.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <%- include("../partials/footer"); -%>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+    });
+  </script>
