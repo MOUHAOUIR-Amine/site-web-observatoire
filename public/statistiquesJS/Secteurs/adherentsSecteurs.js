@@ -1,25 +1,26 @@
-let myChart = document.getElementById('myChart').getContext('2d');
+let myChart2 = document.getElementById('myChart2').getContext('2d');
 
 // Global Options
 Chart.defaults.global.defaultFontFamily = 'Lato';
 Chart.defaults.global.defaultFontSize = 18;
 Chart.defaults.global.defaultFontColor = '#777';
 
-let massPopChart = new Chart(myChart, {
-  type: 'pie', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+let massPopChart = new Chart(myChart2, {
+  type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
   data: {
-    labels: ["Agriculture",
-             "Artisanat",
-             "Tourisme",
-             "Argan",
-             "Art et culture",
-             "Mines",
-             "Habitat"
-           ],
+    labels: [
+               "Agriculture",
+               "Artisanat",
+               "Tourisme",
+               "Argan",
+               "Art et culture",
+               "Mines",
+               "Habitat"
+    ],
 
     datasets: [{
-      label: 'coopératives',
-      data: [ 100, 200, 333, 444, 555, 666, 777 ],
+      label: 'cooperatives',
+      data: [ 100, 200, 300, 400, 500, 600, 700 ],
       //backgroundColor:'green',
       backgroundColor: [
         '#130061',
@@ -53,7 +54,7 @@ let massPopChart = new Chart(myChart, {
   options: {
     title: {
       display: true,
-      text: "Nombre d'adhérents par secteurs d'activités",
+      text: "Nombre de coopératives par secteurs d'activités",
       fontSize: 25
     },
     legend: {

@@ -1,0 +1,72 @@
+<% if (auth==1) { %>
+<%- include('../partials/login_header'); -%>"
+<% }else { %>
+<%- include('../partials/header'); -%>
+<% } %>
+<br>
+
+
+  <section id="more-services" class="services">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>ODCO</h2>
+        <p>Presentation de l'ODCO</p>
+      </div>
+      <br>
+
+      <div >
+
+        <div class="section-title" data-aos="fade-up"></div>
+        <p>
+
+          Organisme public, le Bureau du Développement de la Coopération (BDECo) a été créé le 18 Septembre 1962 sous forme de structure administrative dépendante de la présidence du Conseil de Gouvernement. Avec l’importance accordée par les pouvoirs publics au secteur coopératif, la nécessité de sa restructuration s’est imposée ; d’où sa conversion en établissement public bénéficiant de la personnalité morale et l’autonomie et financière dénommé Office de Développement de la Coopération (ODCO) conformément au Dahir du 3 Août 1975 doté d’attributions précises orientées principalement vers l’accompagnement des coopératives dans les domaines de la formation, l’information et l’appui juridique.
+
+        <br>L’ODCO est administré par un conseil administratif composé de représentants des départements ministériels, d’établissements publics, de banques et de coopératives et présidé par Madame Nadia Fettah Alaoui ministre du Tourisme, de l’Artisanat, du Transport Aérien et de l’Economie Sociale
+
+        </p>
+        <br> <br>
+        L’O.D.CO est chargé, selon la loi n° 112-12, de :
+
+
+      </div>
+    </div>
+</section>
+
+<section id="counts" class="counts">
+    <div class="container">
+
+      <div class="row">
+        <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+          <img src="img/odco-maroc.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <ul>
+                <br><i class="ri-check-double-line"></i>  Approbation des demandes de validation des dénominations  </li>
+                <br><i class="ri-check-double-line"></i>  Tenir le registre central des coopératives  </li>
+                <br><i class="ri-check-double-line"></i> Accompagner les coopératives et leurs unions dans les domaines de la formation, de l’information et de l’assistance juridique </li>
+                <br><i class="ri-check-double-line"></i> Financer des campagnes de vulgarisation et de formation au profit des coopérateurs </li>
+                <br><i class="ri-check-double-line"></i> Aider à la réalisation d’œuvres sociales au profit des coopérateurs </li>
+                <br><i class="ri-check-double-line"></i>  S’assurer que les coopératives et leurs unions sont gérées conformément à la législation en vigueur </li>
+                <br><i class="ri-check-double-line"></i> Collecter et diffuser la documentation de l’information relative à la coopération </li>
+                <br><i class="ri-check-double-line"></i> Etudier et proposer toutes réformes législatives ou réglementaires et toute mesure à caractères particulier qui concerne la création et le développement des coopératives </li>
+              </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <%- include("../partials/footer"); -%>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+    });
+  </script>

@@ -8,18 +8,36 @@ Chart.defaults.global.defaultFontColor = '#777';
 let massPopChart = new Chart(myChart, {
   type: 'pie', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
   data: {
-    labels: ["Agriculture",
-             "Artisanat",
-             "Tourisme",
-             "Argan",
-             "Art et culture",
-             "Mines",
-             "Habitat"
-           ],
+    labels: ['Agriculture', 'Artisanat', 'Habitat', 'Argane', 'Forets', 'Denrees Alimentaires', 'Plantes Medicales et aromatiques', 'Peche',
+    'Alphabetisation', 'Transport', 'Commercants detaillants', 'Consommation', 'Exploitation des carrieres', "Main d'oeuvre", 'Tourisme',
+    'Traitements de dechets', 'Centres de gestion', 'Imprimerie-Papeterie', 'Mines', 'Telecommunication', 'Art et culture', 'Commerce electronique'],
 
     datasets: [{
-      label: 'coopératives',
-      data: [ 100, 200, 333, 444, 555, 666, 777 ],
+      label: 'Population',
+      data: [
+        10542,
+        2497,
+        1146,
+        299,
+        236,
+        236,
+        157,
+        153,
+        122,
+        86,
+        78,
+        41,
+        38,
+        32,
+        19,
+        14,
+        13,
+        9,
+        6,
+        5,
+        5,
+        1
+      ],
       //backgroundColor:'green',
       backgroundColor: [
         '#130061',
@@ -53,7 +71,7 @@ let massPopChart = new Chart(myChart, {
   options: {
     title: {
       display: true,
-      text: "Nombre d'adhérents par secteurs d'activités",
+      text: 'Coopératives par secteur (fin décembre 2015)',
       fontSize: 25
     },
     legend: {

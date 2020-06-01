@@ -1,0 +1,76 @@
+<% if (auth==1) { %>
+<%- include('../partials/login_header'); -%>"
+<% }else { %>
+<%- include('../partials/header'); -%>
+<% } %>
+<br>
+
+
+  <section id="more-services" class="services">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Historique</h2>
+        <p>L’historique des Coopératives au Maroc</p>
+      </div>
+      <br>
+
+      <div >
+
+        <div class="section-title" data-aos="fade-up"></div>
+        <p>
+
+          Les coopératives ont franchi plusieurs étapes dans leur évolution historique.
+
+
+        </p>
+
+
+      </div>
+    </div>
+</section>
+
+<section id="counts" class="counts">
+    <div class="container">
+
+      <div class="row">
+        <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+          <img src="img/portfolio/coop5.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <ul>
+                <br><i class="ri-check-double-line"></i> Etape d’implantation des coopératives par les autorités du protectorat pour des raisons economiques <br> Les Coopératives ont été implantées parmi les producteurs marocains à partir de 1937 par les autorités du protectorat pour des raisons politiques. 62 coopératives ont été fonctionnelles à la veille de l’Indépendance dont la  majorité sont des coopératives agricoles et artisanales, des coopératives céréalières et oleocoles dont certaines existent encore de nos jours. </li>
+                <br><br><i class="ri-check-double-line"></i> Etape d’intervention de l’état dans la gestion des coopératives : 1956-1983 <br> Après l’Indépendance,  un certain nombre de mesures ont été prises par l’Etat pour encourager le développement des coopératives  dont :
+
+                - La promulgation de plusieurs textes juridiques, tels que le texte autorisant la constitution de coopératives minières, de coopératives d’habitations, de coopératives agricoles de réformes agraires etc…
+                - La création de l’ODCO en 1962 pour appuyer les coopératives en terme de formation ; d’information ; de coordination…
+                - L’octroi de subventions aux coopératives,
+                - La mise à la disposition des coopératives des agents d’encadrement technique, par conséquence, les départements ministériels concernés.
+                Le nombre de coopératives a connu un accroissement rapide passant de 62 coopératives en 1957 à environ 2000 en 1983. Les subventions octroyées par l’Etat ont contribué à l’apparition de coopératives dépendantes présentant ainsi l’image de structures paraétatiques avec des coopérateurs  incapables de développer un véritable projet coopératif.
+                 La mauvaise utilisation de la subvention a tué l’esprit d’entreprise et de créativité chez les coopérateurs.  </li>
+                <br><br><i class="ri-check-double-line"></i> Etape du désengagement de l’Etat des coopératives et unicité de la législation coopérative <br> L’orientation de l’Etat à partir de 1983 vers le désengagement de certains secteurs s’est répercutée sur les coopératives : suppressions de certains avantages préférentiels octroyés aux coopératives, politique de désengagement des coopératives…
+                Cette politique constitue une ébauche vers la création de coopératives  autonomes qui comptent sur elles-mêmes mais qui nécessitent des efforts colossaux au niveau de la valorisation de l’élément humain par la formation et la sensibilisation. Pour renforcer cette orientation, un cadre juridique unique pour les coopératives  abrogeant les textes antérieurs a été adopté en 1983,  mais n’est entré en application dans sa totalité qu’en 1993.  Ce cadre juridique, la Loi n° 24.83, portant statut général des coopératives et missions de l’ODCo prône en faveur de l’autonomie des coopératives, de la formation de l’élément humain des coopératives, de la création des unions de coopératives. Cette loi, mise à l’épreuve, s’est avérée en décalage avec son environnement avec les lacunes et des défauts, d’où la nécessité d’une réforme qui a poussé les ministres de tutelle de l’ODCO à proposer des amendements dont le dernier a été approuvé par le Conseil du Gouvernement du 7 Septembre 2011. </li>
+                <br><br><i class="ri-check-double-line"></i> Etape d’utilisation des coopératives comme instrument de création de l’emploi, intégration de la femme dans la vie active, organisation du secteur informel etc. <br>  Cette  étape qui a commencé à partir de l’an 2000 est caractérisée  par l’intérêt, de plus en plus important, porté aux coopératives par plusieurs bailleurs de fonds et des programmes tels que l’INDH, Maroc Vert, Ibhar, M.C., habitat classe moyenne, etc...
+                Grâce aux appuis financiers et formations dispensées au profit des coopératives dans des programmes de plusieurs instances concernées par le développement  des AGR organisées dans des coopératives, en plus des efforts déployés par l’ODCO dans la vulgarisation de la formule coopérative, le nombre de coopératives a atteint 15.735 coopératives en fin 2015. Chaque mois, 120 coopératives en moyennes depuis 2010 sont constituées contribuant à la valorisation des produits de terroir et à la création d’emplois etc...  Ce qui pose en parallèle et avec acuité, le problème de l’accompagnement  de ces institutions. </li>
+
+
+            </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <%- include("../partials/footer"); -%>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+    });
+  </script>

@@ -1,0 +1,83 @@
+<%- include("../../partials/header"); -%>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section id="more-services" class="more-services">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Statistiques</h2>
+      <p>Retrouvez tous les Statistiques de votre region</p>
+    </div>
+    <br>
+    <br>
+    <br><br>
+
+    <div class="row">
+
+      <div class="form-group">
+        <h4>Choisir votre Region</h4>
+
+        <form action="/selectionnerRegion" method="post">
+          <select name="region" class="form-control selectpicker">
+            <option>Selectionner votre Region</option>
+            <option>Rabat Salé Kénitra</option>
+            <option>Casablanca Settat</option>
+            <option>Fès Meknès</option>
+            <option>Marrakech Safi</option>
+            <option>Tanger Tétouan Al Hoceïma</option>
+            <option>Oriental</option>
+            <option>Béni Mellal Khénifra</option>
+            <option>Draâ Tafilalet</option>
+            <option> Souss Massa</option>
+            <option>Guelmim Oued Noun</option>
+            <option>Laâyoune Sakia El Hamra</option>
+            <option> Dakhla Oued Ed Dahab</option>
+          </select>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4"><br>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-primary">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRechercher <span
+                  class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+
+
+
+
+      <img src="img/region.png" class="img-fluid animated" alt="" style="width:50%">
+
+
+    </div>
+
+  </div>
+
+
+  </div>
+</section>
+<br>
+<br>
+<br>
+
+
+
+
+<%- include("../../partials/footer"); -%>
+
+<!-- <script type="text/javascript">
+   $(document).ready(function() {
+     $('#sidebarCollapse').on('click', function() {
+       $('#sidebar').toggleClass('active');
+       $(this).toggleClass('active');
+     });
+   });
+ </script> -->

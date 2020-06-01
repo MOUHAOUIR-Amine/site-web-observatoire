@@ -1,4 +1,6 @@
-<%- include("partials/header"); -%>
+<%- include("partials/login_header"); -%>
+
+
 
 <div class="container">
 
@@ -8,7 +10,7 @@
 <fieldset>
 
 <!-- Form Name -->
-<legend><center><h2><b>Formule d'inscription</b></h2></center></legend><br>
+<legend><center><h2><b>Modifier le compte</b></h2></center></legend><br>
 
 <!-- Text input-->
 
@@ -19,7 +21,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="nom" placeholder="Nom de famille" class="form-control"  type="text" value="<%= typeof nom != 'undefined' ? nom : '' %>">
+  <input name="nom" placeholder="KHALIL" class="form-control"  type="text" value="<%= typeof nom != 'undefined' ? nom : '' %>">
     </div>
   </div>
 </div>
@@ -32,7 +34,7 @@
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="prenom" placeholder="Prénom" class="form-control"  type="text" value="<%= typeof prenom != 'undefined' ? prenom : '' %>">
+  <input  name="prenom" placeholder="Abdelwahab" class="form-control"  type="text" value="<%= typeof prenom != 'undefined' ? prenom : '' %>">
     </div>
   </div>
 </div>
@@ -69,7 +71,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="Adresse électronique" class="form-control"  type="email" value="<%= typeof email != 'undefined' ? email : '' %>">
+  <input name="email" placeholder="khalil.tadla@gmail.com" class="form-control"  type="email" ">
     </div>
   </div>
 </div>
@@ -84,7 +86,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="fas fa-lock"></i></span>
-  <input name="password" placeholder="Mot de passe" class="form-control"  type="password" value="<%= typeof password != 'undefined' ? password : '' %>">
+  <input name="password" placeholder="*************" class="form-control"  type="password" ">
     </div>
   </div>
 </div>
@@ -96,7 +98,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="fas fa-lock"></i></span>
-  <input name="password2" placeholder="Confirmer votre mot de passe" class="form-control"  type="password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>">
+  <input name="password2" placeholder="****************" class="form-control"  type="password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>">
     </div>
   </div>
 </div>
@@ -107,20 +109,16 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="phoneNumber" placeholder="(06********)" class="form-control" type="texte">
+  <input name="phoneNumber" placeholder="0680635889" class="form-control" type="texte">
     </div>
+    <br> <p class="lead mt-4"> <a href="/mon_compte">Enregistrer</a></p>
   </div>
 </div>
 
 
 <!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label"></label>
-  <div class="col-md-4"><br>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" ><i class="fas fa-user-plus"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSign-Up&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
-  </div>
 
-</div>
+
 </fieldset>
 
 
@@ -131,3 +129,6 @@
 
 
 <%- include("partials/footer"); -%>
+
+
+  <%- include("partials/footer"); -%>

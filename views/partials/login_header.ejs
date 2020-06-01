@@ -10,13 +10,24 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="img/logoODCO.jpg" rel="icon">
-  <link href="img/logoODCO.jpg" rel="apple-touch-icon">
+  <link href="img/logoODCO.png" rel="icon">
+  <!-- <link href="img/logoODCO.jpg" rel="apple-touch-icon"> -->
 
   <!-- Fontawesome -->
 
-<script src="https://kit.fontawesome.com/f6ba4d3b01.js" crossorigin="anonymous"></script>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f6ba4d3b01.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css" />
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- Fontawesome for sidebar -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -32,6 +43,7 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/style4.css" rel="stylesheet">
 
 
 </head>
@@ -42,38 +54,48 @@
 
     <div class="logo mr-auto">
       <!-- <h1 class="text-light"><a href="/"><span>ODCO</span></a></h1> -->
-      <a href="/"><img src="img/logoODCO.jpg" alt="" class="img-fluid"></a>
+      <a href="login_home"><img src="img/logoODCO.png" alt="" class="img-fluid"></a>
+    </div>
+
+    <div class="logo mr-auto">
+      <!-- <h1 class="text-light"><a href="/"><span>ODCO</span></a></h1> -->
+      <a href="login_home"><img src="" alt="" class="img-fluid"></a>
+    </div>
+
+    <div class="logo mr-auto">
+      <!-- <h1 class="text-light"><a href="/"><span>ODCO</span></a></h1> -->
+      <a href="login_home"><img src="img/ODCO.png" alt="" class="img-fluid"></a>
     </div>
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="active"><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li class="drop-down"><a href="">Drop Down</a>
+
+        <li class="drop-down"><a href="">ODCO</a>
           <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="drop-down"><a href="#">Drop Down 2</a>
-              <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
-            <li><a href="#">Drop Down 5</a></li>
+            <li><a href="/presentation_odco">Presentation</a></li>
+            <li><a href="/mission_odco">Missions</a></li>
+            <li><a href="/action_odco">Actions</a></li>
+            <li><a href="/partenaire_odco">Partenariat et coordination</a></li>
           </ul>
         </li>
-        <li><a href="#contact">Contact</a></li>
 
-        <li class="get-started"><a href="/secrets">Mon compte</a></li>
-        <li class="get-started"><a href="/login">Logout</a></li>
+        <li class="drop-down"><a href="">L'OBERVATOIRE</a>
+          <ul>
+            <li><a href="/presentation_observatoire">Presentation</a></li>
+            <li><a href="/mission_observatoire">Missions</a></li>
+            <li><a href="/historique_observatoire">Historique</a></li>
+            <li><a href="/etude_observatoire">Etudes et prospectives</a></li>
+
+          </ul>
+        </li>
+
+
+
+        <li><a href="docutheque">DOCUTHEQUE</a></li>
+        <li><a href="/cooperativeAuMaroc">STATISTIQUES</a></li>
+        <li><a href="contact">CONTACT</a></li>
+        <li class="get-started"><a href="/mon_compte">Mon compte</a></li>
+        <li class="get-started"><a href="/logout">Logout</a></li>
 
       </ul>
     </nav><!-- .nav-menu -->

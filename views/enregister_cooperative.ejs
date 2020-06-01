@@ -1,4 +1,4 @@
-<%- include("partials/header"); -%>
+<%= hdr %>
 
 <div class="container">
 
@@ -97,7 +97,17 @@
         <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input name="secteurActivite" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+            <!-- <input name="secteurActivite" placeholder="First Name" class="form-control" type="text" value=""> -->
+            <select name="secteurActivite" class="form-control selectpicker">
+              <option value="">Selectionner votre Secteur d'activite</option>
+              <option>Agriculture</option>
+              <option>Artisanat</option>
+              <option >Tourisme</option>
+              <option >Argan</option>
+              <option >Art et culture</option>
+              <option >Mines</option>
+              <option >Habitat</option>
+              </select>
           </div>
         </div>
       </div>
@@ -119,7 +129,22 @@
         <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input name="region" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+            <!-- <input name="region" placeholder="First Name" class="form-control" type="text" value="-->
+            <select name="region" class="form-control selectpicker">
+              <option value="">Selectionner votre Region</option>
+              <option>Rabat Salé Kénitra</option>
+              <option>Casablanca Settat</option>
+              <option>Fès Meknès</option>
+              <option>Marrakech Safi</option>
+              <option>Tanger Tétouan Al Hoceïma</option>
+              <option>Oriental</option>
+              <option>Béni Mellal Khénifra</option>
+              <option>Draâ Tafilalet</option>
+              <option> Souss Massa</option>
+              <option>Guelmim Oued Noun</option>
+              <option>Laâyoune Sakia El Hamra</option>
+              <option> Dakhla Oued Ed Dahab</option>
+            </select>
           </div>
         </div>
       </div>
@@ -129,7 +154,84 @@
         <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input name="province" placeholder="First Name" class="form-control" type="text" value="<%= typeof name != 'undefined' ? name : '' %>">
+            <!-- <input name="province" placeholder="First Name" class="form-control" type="text" value=""> -->
+            <select name="province" class="form-control selectpicker">
+              <option value="">Selectionner votre Province</option>
+                  <option >Rabat</option>
+                  <option >Salé</option>
+                  <option > Skhirate, Témara</option>
+                  <option > Kénitra</option>
+                  <option >Sidi Kacem</option>
+                  <option >Sidi Slimane</option>
+                  <option >Casablanca</option>
+                  <option >Mohammédia</option>
+                  <option >El Jadida</option>
+                  <option >Nouaceur</option>
+                  <option >Médiouna</option>
+                  <option >Benslimane</option>
+                  <option >Berrechid</option>
+                  <option >Settat</option>
+                  <option >Sidi Bennour</option>
+                  <option >Fès</option>
+                  <option >Meknès</option>
+                  <option >El Hajeb</option>
+                  <option >Ifrane</option>
+                  <option >Moulay Yaâcoub</option>
+                  <option >Séfrou</option>
+                  <option >Boulemane</option>
+                  <option >Taounate</option>
+                  <option >Taza</option>
+                  <option >Marrakech</option>
+                  <option >Chichaoua</option>
+                  <option >Al Haouz</option>
+                  <option >El Kelaâ des Sraghna</option>
+                  <option >Essaouira</option>
+                  <option >Rehamna</option>
+                  <option >Safi</option>
+                  <option >Youssoufia</option>
+                  <option >Tanger, Assilah</option>
+                  <option >M’diq, Fnideq</option>
+                  <option >Tétouan</option>
+                  <option >Fahs, Anjra</option>
+                  <option >Larache</option>
+                  <option >Al Hoceïma</option>
+                  <option >Chefchaouen</option>
+                  <option >Ouezzane</option>
+                  <option >Oujda, Angad</option>
+                  <option >Nador</option>
+                  <option >Driouch</option>
+                  <option >Jerada</option>
+                  <option >Berkane</option>
+                  <option >Taourirt</option>
+                  <option >Guercif</option>
+                  <option >Figuig</option>
+                  <option >Béni Mellal</option>
+                  <option >Azilal</option>
+                  <option >Fquih Ben Salah</option>
+                  <option >Khénifra</option>
+                  <option >Khouribga</option>
+                  <option >Errachidia</option>
+                  <option >Ouarzazate</option>
+                  <option >Midelt</option>
+                  <option >Tinghir</option>
+                  <option >Zagora</option>
+                  <option >Agadir Ida, Outanane</option>
+                  <option >Inezgane, Aït Melloul</option>
+                  <option >Chtouka, Aït Baha</option>
+                  <option >Taroudant</option>
+                  <option >Tiznit</option>
+                  <option >Tata</option>
+                  <option >Guelmim</option>
+                  <option >Assa-Zag</option>
+                  <option >Tan Tan</option>
+                  <option >Sidi Ifni</option>
+                  <option >Laâyoune</option>
+                  <option >Boujdour</option>
+                  <option >Tarfaya</option>
+                  <option >Es-Semara</option>
+                  <option >Oued Ed Dahab</option>
+                  <option >Aousserd</option>
+            </select>
           </div>
         </div>
       </div>

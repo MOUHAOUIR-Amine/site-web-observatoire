@@ -1,5 +1,8 @@
-
-<%- include("partials/header"); -%>
+<% if (auth==1) { %>
+<%- include('partials/login_header'); -%>"
+<% }else { %>
+<%- include('partials/header'); -%>
+<% } %>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -7,10 +10,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Bienvenue a l'observatoire national des cooperatives marocaines.</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">We are team of talanted designers making websites with Bootstrap</h2>
+          <h1 data-aos="fade-up">Bienvenue à l'observatoire national des cooperatives marocaines.</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Ce site est le site officiel des statistiques des cooperatives au Maroc</h2>
           <div data-aos="fade-up" data-aos-delay="800">
-            <a href="/register" class="btn-get-started scrollto">Creer votre cooperative</a>
+            <a href="/cooperativeAuMaroc" class="btn-get-started scrollto">Decouvrir les statistiques</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
@@ -33,30 +36,30 @@
 
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="img/partenaires/ministere.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500" style="width:100%">
+            <A href="https://mtataes.gov.ma/fr/" ><img  src="img/partenaires/ministere.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500" style="width:100%"></A>
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="img/partenaires/artisanat-du-maroc-logo.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100"
-            style="width:80%">
+            <A href="https://artisanat-marocaine.com/fr/" ><img src="img/partenaires/artisanat-du-maroc-logo.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100"
+            style="width:80%"></A>
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="img/partenaires/anapec.png" class="img-fluid" alt="" data-aos="zoom-in" style="width:80%">
-          </div>
-
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="img/partenaires/indh.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200" style="width:80%">
+            <A href="http://m.anapec.org/" ><img src="img/partenaires/anapec.png" class="img-fluid" alt="" data-aos="zoom-in" style="width:80%"></A>
           </div>
 
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="img/partenaires/onca.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300" style="width:200%">
+            <A href="http://www.indh.ma/" ><img src="img/partenaires/indh.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200" style="width:80%"></A>
+          </div>
+
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <A href="https://www.onca.gov.ma/" ><img src="img/partenaires/onca.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300" style="width:200%"></A>
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="img/partenaires/coop.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400" style="width:200%">
+            <A href="https://www.coopmaroc.com/" ><img src="img/partenaires/coop.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400" style="width:200%"></A>
           </div>
 
 
@@ -81,7 +84,7 @@
 
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> La collecte et la centralisation des statistiques de l’énergie </li>
+              <li><i class="ri-check-double-line"></i> La collecte et la centralisation des statistiques des cooperatives </li>
               <li><i class="ri-check-double-line"></i> L’alignement de ces statistiques avec les standards internationaux </li>
               <li><i class="ri-check-double-line"></i> La mise en place d’un système informatique pour la collecte et la diffusion de ces statistiques </li>
             </ul>
@@ -92,7 +95,7 @@
               du secteur : départements ministériels, institutions nationales, instances civiles, politiques, syndicales et médiatiques.
 
               </p>
-            <a href="#" class="btn-learn-more">Lire la suite</a>
+
           </div>
         </div>
 
@@ -165,7 +168,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <div class="icon"><i class="icofont-chart-line"></i></div>
-              <h4 class="title"><a href="">Statistiques</a></h4>
+              <h4 class="title"><a href="cooperativeAuMaroc">Statistiques</a></h4>
               <p class="description">Découvrez les principales statistiques relatives aux coopératives</p>
             </div>
           </div>
@@ -189,7 +192,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Constituer votre coopérative</a></h4>
+              <h4 class="title"><a href="/register">Constituer votre coopérative</a></h4>
               <p class="description">Retrouvez un guide complet pour démarrer votre coopérative</p>
             </div>
           </div>
@@ -197,8 +200,8 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Denomination</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <h4 class="title"><a href="/register">Declaration des cooperatives</a></h4>
+              <p class="description">Declarer une demande de creation d'une nouveau cooperative</p>
             </div>
           </div>
 
@@ -216,7 +219,7 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Actualites</h2>
-          <p>Retrouvez toutes l'actualités du secteur des coopératives</p>
+          <p>Retrouvez toutes les actualités du secteur des coopératives</p>
         </div>
 
         <div class="row">
@@ -225,7 +228,7 @@
               <div class="card-body">
                 <!-- <h5 class="card-title"><a href="">Lobira Duno</a></h5> -->
                 <p class="card-text">Consécration de 14 coopératives féminines du prix national de la meilleure idée de projet de développement d’une coopérative féminine.</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i>Lire la suite</a></div>
+                <div class="read-more"><a href="https://mtataes.gov.ma/fr/"><i class="icofont-arrow-right"></i>Lire la suite</a></div>
               </div>
             </div>
           </div>
@@ -234,7 +237,7 @@
               <div class="card-body">
                 <!-- <h5 class="card-title"><a href="">Limere Radses</a></h5> -->
                 <p class="card-text">L’Office de Développement de la Coopération Signe une convention de partenariat avec l’Université Chouaib Doukkali.</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i>Lire la suite</a></div>
+                <div class="read-more"><a href="https://mtataes.gov.ma/fr/"><i class="icofont-arrow-right"></i>Lire la suite</a></div>
               </div>
             </div>
 
@@ -242,18 +245,18 @@
           <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("img/actualites/actualite3.jpg");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Nive Lodo</a></h5>
+                <h5 class="card-title"><a href="https://mtataes.gov.ma/fr/"></a></h5>
                 <p class="card-text">l’ODCO participe à une table ronde sur l’implémentation du pacte mondial pour les réfugiés au Maroc.</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i>Lire la suite</a></div>
+                <div class="read-more"><a href="https://mtataes.gov.ma/fr/"><i class="icofont-arrow-right"></i>Lire la suite</a></div>
               </div>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("img/actualites/actualite4.jfif");' data-aos="fade-up" data-aos-delay="200">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Pale Treda</a></h5>
+                <h5 class="card-title"><a href=""></a></h5>
                 <p class="card-text">Réunion de travail avec les partenaires du projet Kasbuy, « Moroccan Internet Society (MISOC), « International-Internet Society » et le Directeur de l'ISOC Afrique.</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i>Lire la suite</a></div>
+                <div class="read-more"><a href="https://mtataes.gov.ma/fr/"><i class="icofont-arrow-right"></i>Lire la suite</a></div>
               </div>
             </div>
           </div>
@@ -275,7 +278,7 @@
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <img src="img/programmes/mourafaka.jfif" class="testimonial-img" alt="">
+              <a href="http://www.odco.gov.ma/fr/content/programme-mourafaka"><img src="img/programmes/mourafaka.jfif" class="testimonial-img" alt=""></a>>
               <h3>Mourafaka</h3>
               <!-- <h4>Ceo &amp; Founder</h4> -->
               <p>
@@ -288,7 +291,7 @@
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <img src="img/programmes/marchesItinerants.png" class="testimonial-img" alt="">
+              <a href="http://www.odco.gov.ma/fr/content/programme-pdress"><img src="img/programmes/marchesItinerants.png" class="testimonial-img" alt=""></a>
               <h3>Pdress</h3>
               <!-- <h4>Designer</h4> -->
               <p>
@@ -301,7 +304,7 @@
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <img src="img/programmes/odco.png" class="testimonial-img" alt="">
+              <a href="http://www.odco.gov.ma/fr/blog/appui-et-accompagnement"><img src="img/programmes/odco.png" class="testimonial-img" alt=""></a>
               <h3>Appui aux coopératives</h3>
               <!-- <h4>Store Owner</h4> -->
               <p>
@@ -348,17 +351,17 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+          <h2>Images</h2>
+
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter="*" class="filter-active">Tout</li>
+              <li data-filter=".filter-app">Agriculture</li>
+              <li data-filter=".filter-card">Art et culture</li>
+              <li data-filter=".filter-web">Tourisme</li>
             </ul>
           </div>
         </div>
@@ -369,12 +372,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/coop1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/coop1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="/portfolio-details" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+
               </div>
             </div>
           </div>
@@ -383,12 +381,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/coop2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/coop2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="/portfolio-details" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+
               </div>
             </div>
           </div>
@@ -397,12 +390,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/coop3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/coop3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="/portfolio-details" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+
               </div>
             </div>
           </div>
@@ -411,26 +399,16 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/coop4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/coop4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="/portfolio-details" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/coop5.jpg" class="img-fluid" alt="">
+              <img src="img/portfolio/coop.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/coop5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="/portfolio-details" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+
               </div>
             </div>
           </div>
@@ -439,12 +417,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/coop6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/coop6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="/portfolio-details" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+
               </div>
             </div>
           </div>
@@ -453,12 +426,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/coop7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/coop7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="/portfolio-details" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+
               </div>
             </div>
           </div>
@@ -467,12 +435,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/coop8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/coop8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="/portfolio-details" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+
               </div>
             </div>
           </div>
@@ -481,12 +444,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/coop9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/coop9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="/portfolio-details" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+
               </div>
             </div>
           </div>
@@ -504,29 +462,28 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Frequently Asked Questions</h2>
+          <h2>QUESTIONS FRÉQUEMMENT POSÉES</h2>
         </div>
 
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Non consectetur a erat nam at lectus urna duis?</h4>
+            <h4>Quelles sont les lois régissant le secteur coopératif au Maroc?</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-            </p>
+              Les coopératives sont soumises à la loi n ° 112.12 relative aux coopératives telle que modifiée et à la loi n ° 16.74 modifiant la loi n ° 112.12 relative aux coopératives ainsi qu'aux dispositions du décret n ° 2.15.617 du 24 mars 2016 définissant les règles d'organisation et de gestion du registre coopératif et à la décision du ministre de la justice et des libertés n ° 1369.16 du 9 mai 2016 Définir la forme et le contenu du registre local des coopératives, les formulaires de demande d'enregistrement, la restriction et la finition modifiées, ainsi qu'un formulaire de certificat et un extrait dudit dossier </p>
           </div>
         </div><!-- End F.A.Q Item-->
 
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+            <h4>Quel est le concept de coopérative?</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+              Un contrat indépendant mis à jour entre soi et / ou les personnes morales ou ensemble, elles ont volontairement accepté de commercialiser leurs produits ou services collectivement ou d'obtenir des services ou un emploi en exploitant leurs capacités matérielles et techniques, et elles sont gérées conformément à la loi et aux principes coopératifs.
             </p>
           </div>
         </div><!-- End F.A.Q Item-->
@@ -534,36 +491,33 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
+            <h4>Quels sont les objectifs de la coopérative ?</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.
-            </p>
+              Les objectifs de la coopérative sont multiples et se distinguent de ceux liés aux entreprises et associations, qui sont des objectifs économiques, sociaux, éducatifs, culturels et environnementaux            </p>
           </div>
         </div><!-- End F.A.Q Item-->
 
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
+            <h4>Quelles sont les conditions d'adhésion à une coopérative??</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt sit enim. Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat assumenda soluta sunt pariatur error doloribus fuga.
-            </p>
+              Rejoindre une coopérative nécessite de pratiquer une activité qui entre dans le domaine coopératif (à l'exception des coopératives résidentielles que le membre ne doit pas posséder un logement adéquat dans le cercle de terre coopérative, ainsi que des coopératives de consommation qui ne nécessitent pas de rejoindre une activité spécifique) avec une note importante que rejoindre une coopérative ne signifie pas l'intégration (une coopérative a besoin À un comptable, à un écrivain, à un gardien ... la coopérative ne peut pas se former entre eux, mais doit être employée) et ce qui est requis dans la "symétrie" coopérative, c'est d'exercer la même activité            </p>
           </div>
         </div><!-- End F.A.Q Item-->
 
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+            <h4>Comment créer une coopérative ?</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-            </p>
+              Une coopérative est créée après avoir effectué les procédures suivantes qui se terminent par l'inscription au registre local des coopératives, et les procédures pour les événements sont les suivantes: obtention d'un certificat de certification du label, signature des statuts, ouverture d'un compte bancaire, obtention d'un récépissé de dépôt auprès de l'autorité locale, inscription au registre local des coopératives et obtention d'une copie de Le formulaire d'inscription comprend le numéro d'enregistrement dans le registre local des coopératives.            </p>
           </div>
         </div><!-- End F.A.Q Item-->
 
@@ -571,79 +525,7 @@
     </section><!-- End F.A.Q Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Contact Us</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-about">
-              <h3>Vesperr</h3>
-              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="info">
-              <div>
-                <i class="ri-map-pin-line"></i>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
-              </div>
-
-              <div>
-                <i class="ri-mail-send-line"></i>
-                <p>info@example.com</p>
-              </div>
-
-              <div>
-                <i class="ri-phone-line"></i>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 

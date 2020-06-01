@@ -1,8 +1,4 @@
-<% if (auth==1) { %>
-<%- include('../../partials/login_header'); -%>
-<% }else { %>
-<%- include('../../partials/header'); -%>
-<% } %>
+<%- include("../../partials/header"); -%>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
@@ -12,18 +8,15 @@
             var ctx = document.getElementById("nombreCoop").getContext('2d');
             var data = {
               labels:[
-                       "Agriculture",
-                       "Artisanat",
-                       "Tourisme",
-                       "Argan",
-                       "Art et culture",
-                       "Mines",
-                       "Habitat"
+              "Laâyoune",
+              "Boujdour",
+              "Tarfaya",
+              "Es-Semara"
                      ],
 
                 datasets: [{
                     label: 'coopératives',
-                    data: <%- JSON.stringify(activiteSecteur); %>,
+                    data:<%- JSON.stringify(activiteRegion); %>,
 
                     backgroundColor: [
                     '#130061',
@@ -66,7 +59,7 @@
                     maintainAspectRatio: false,
                     title: {
                       display: true,
-                      text: "Nombre de cooperatives par secteurs d'activités",
+                      text: "Nombre de cooperatives dans la region Laayoune-Assakia-Al-hamra",
                       fontSize: 25
                     },
                     legend: {
@@ -98,13 +91,10 @@
             var ctx_2 = document.getElementById("nombreAdh").getContext('2d');
             var data_2 = {
               labels:[
-                       "Agriculture",
-                       "Artisanat",
-                       "Tourisme",
-                       "Argan",
-                       "Art et culture",
-                       "Mines",
-                       "Habitat"
+              "Laâyoune",
+              "Boujdour",
+              "Tarfaya",
+              "Es-Semara"
                      ],
 
                 datasets: [{
@@ -150,7 +140,7 @@
                     maintainAspectRatio: false,
                     title: {
                       display: true,
-                      text: "Nombre d'adhérents par secteurs d'activités",
+                      text: "Nombre d'adhérents dans la region Laayoune-Assakia-Al-hamra",
                       fontSize: 25
                     },
                     legend: {

@@ -1,70 +1,83 @@
-  <%- include("../partials/headerStatistiques"); -%>
+<% if (auth==1) { %>
+<%- include('../partials/login_header'); -%>"
+<% }else { %>
+<%- include('../partials/header'); -%>
+<% } %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+  <section id="more-services" class="more-services">
+    <div class="container">
 
-  <div class="row">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Statistiques</h2>
+        <p>Retrouvez tous les Statistiques des coopératives</p>
+      </div>
+      <br>
+      <br>
+      <br><br>
 
-
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <a href="/selectionnerAnneeSecteurs" class="card-link">
-            <h3 class="card-title">Statistiques par secteur d'activités</h3>
-            <br>
-            <br>
-            <img src="img/teamwork.png" alt="" class="imgteamwork">
-            <br>
-            <br>
-            <p class="card-text">Toutes les statistiques concernant les secteurs d’activites des cooperatives au Maroc sont disponibles ici.</p>
-          </a>
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="card" style='background-image: url("img/portfolio/coop1.jpg");' data-aos="fade-up" data-aos-delay="100">
+            <div class="card-body">
+              <!-- <h5 class="card-title"><a href="">Lobira Duno</a></h5> -->
+              <br>
+<br>
+<br>
+              <div class="read-more"><a href="/cooperativesSecteurs"><i class="icofont-arrow-right"></i>Par Secteur</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="card" style='background-image: url("img/region.png");' data-aos="fade-up" data-aos-delay="200">
+            <div class="card-body">
+              <!-- <h5 class="card-title"><a href="">Limere Radses</a></h5> -->
+              <br>
+<br>
+<br>
+              <div class="read-more"><a href="/selectionnerRegion"><i class="icofont-arrow-right"></i>Par Region</a></div>
+            </div>
+          </div>
 
         </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <a href="/selectionnerAnneeRegions" class="card-link">
-            <h3 class="card-title">Statistiques par region</h3>
-            <br>
-            <br>
-            <img src="img/morocco.png" alt="" class="imgmorroco">
-            <br>
-            <br>
-            <p class="card-text">Toutes les statistiques des cooperatives par region du Maroc sont disponibles ici.</p>
-          </a>
+        <div class="col-md-6 d-flex align-items-stretch mt-4">
+          <div class="card" style='background-image: url("img/sex.png");' data-aos="fade-up" data-aos-delay="100">
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://mtataes.gov.ma/fr/"></a></h5>
+              <br>
+              <br>
+              <br>
+              <div class="read-more"><a href="https://mtataes.gov.ma/fr/"><i class="icofont-arrow-right"></i>Par sexe</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-stretch mt-4">
+          <div class="card" style='background-image: url("img/age.jpg");' data-aos="fade-up" data-aos-delay="200">
+            <div class="card-body">
+              <h5 class="card-title"><a href=""></a></h5>
+              <br>
+<br>
+<br>
+              <div class="read-more"><a href="https://mtataes.gov.ma/fr/"><i class="icofont-arrow-right"></i>Par Age</a></div>
+            </div>
+          </div>
         </div>
       </div>
+      <br>
+      <br>
+      <br>
     </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-  </div>
-  </div>
-
-
-
-
-
-
+  </section>
+  <br>
+  <br>
+  <br>
 
 
 
 
   <%- include("../partials/footer"); -%>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#sidebarCollapse').on('click', function() {
-        $('#sidebar').toggleClass('active');
-        $(this).toggleClass('active');
-      });
-    });
-  </script>

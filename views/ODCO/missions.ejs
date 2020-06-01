@@ -1,6 +1,9 @@
 
-<%- include("partials/header"); -%>
-
+<% if (auth==1) { %>
+<%- include('partials/login_header'); -%>"
+<% }else { %>
+<%- include('partials/header'); -%>
+<% } %>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 

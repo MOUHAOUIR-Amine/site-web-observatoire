@@ -1,0 +1,64 @@
+<% if (auth==1) { %>
+<%- include('../partials/login_header'); -%>"
+<% }else { %>
+<%- include('../partials/header'); -%>
+<% } %>
+<br>
+
+
+  <section id="more-services" class="services">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Action</h2>
+        <p>Les Actions du Service Information</p>
+      </div>
+      <br>
+
+      <div >
+
+        <div class="section-title" data-aos="fade-up"></div>
+
+
+
+      </div>
+    </div>
+</section>
+
+<section id="counts" class="counts">
+    <div class="container">
+
+      <div class="row">
+        <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+          <img src="img/odco-maroc.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <ul>
+                    <i class="ri-check-double-line"></i> Organisation de journées d’études, des tables rondes, des colloques pour sensibiliser le public et les coopératives sur la formule coopérative, de ses réalisations et contraintes et de ses perspectives</li>
+                    <Br><i class="ri-check-double-line"></i> Commémoration de la journée internationale des coopératives le 1 er samedi du mois de juillet de chaque année  </li>
+                    <Br><i class="ri-check-double-line"></i> Edition d’une revue trimestrielle sur les coopératives  en Arabe </li>
+                    <Br><i class="ri-check-double-line"></i> Etudier et délivrer les attestations de validation de la dénomination des coopératives  </li>
+                    <Br><i class="ri-check-double-line"></i>  Prêter assistance lors de l’élaboration des statuts et la constitution des dossiers des coopératives,  </li>
+                    <Br><i class="ri-check-double-line"></i>  Accompagnement juridique des coopératives,  </li>
+                    <Br><i class="ri-check-double-line"></i>  Elaboration et proposition des projets de textes législatifs portant au développement des coopératives </li>
+                    <Br><i class="ri-check-double-line"></i> Etude de conformité des dossiers des coopératives envoyées par les registres locaux des coopératives </li>
+                    <Br><i class="ri-check-double-line"></i>  Centraliser et étudier les demandes des coopératives pour traiter  avec les membres </li>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <%- include("../partials/footer"); -%>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+    });
+  </script>

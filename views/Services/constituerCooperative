@@ -1,4 +1,8 @@
-<%- include("partials/header"); -%>
+<% if (auth==1) { %>
+<%- include('../partials/login_header'); -%>"
+<% }else { %>
+<%- include('../partials/header'); -%>
+<% } %>
 
 
 

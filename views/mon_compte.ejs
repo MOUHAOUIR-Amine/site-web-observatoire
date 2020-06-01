@@ -1,0 +1,100 @@
+<%= hdr %>
+
+
+<div class="container">
+
+
+    <form class="well form-horizontal" action="/register" method="post"  id="contact_form">
+
+<fieldset>
+
+<!-- Form Name -->
+<legend><center><h2><b>Mon compte</b></h2></center></legend><br>
+
+<!-- Text input-->
+
+<div class="form-group">
+
+  <%- include("partials/messages") -%>
+  <label class="col-md-4 control-label" >Nom</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="nom" placeholder="KHALIL" class="form-control"  type="text" value="<%= typeof nom != 'undefined' ? nom : '' %>">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Prénom</label>
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="prenom" placeholder="Abdelwahab" class="form-control"  type="text" value="<%= typeof prenom != 'undefined' ? prenom : '' %>">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+  <div class="form-group">
+  <label class="col-md-4 control-label">Domaine d'activite</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+        <input  name="prenom" placeholder="Agriculture" class="form-control"  type="text" value="<%= typeof prenom != 'undefined' ? prenom : '' %>">
+
+  </div>
+</div>
+</div>
+
+<!-- Text input-->
+
+<!-- Text input-->
+
+  <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="khalil.tadla@gmail.com" class="form-control"  type="email" value="<%= typeof email != 'undefined' ? email : '' %>">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+
+<!-- Text input-->
+
+
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Numero de telephone</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phoneNumber" placeholder="0680635889" class="form-control" type="texte">
+    </div>
+    <div>
+        <br> <br>
+        <li class="get-started"><a href="/modifier_compte">Modifier mon compte</a></li>
+        <br><li class="get-started"><a href="/logout">Supprimer mon compte</a></li>
+
+</div>
+</div>
+
+</fieldset>
+
+
+</form>
+
+
+    </div><!-- /.container -->
+
+
+<%- include("partials/footer"); -%>

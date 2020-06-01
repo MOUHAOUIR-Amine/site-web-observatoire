@@ -1,0 +1,72 @@
+<% if (auth==1) { %>
+<%- include('../partials/login_header'); -%>"
+<% }else { %>
+<%- include('../partials/header'); -%>
+<% } %>
+<br>
+
+
+  <section id="more-services" class="services">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Mission</h2>
+        <p>Retrouvez toutes les missions de l'ODCO</p>
+      </div>
+      <br>
+
+      <div >
+
+        <div class="section-title" data-aos="fade-up"></div>
+        <p>
+
+            L’ODCO est administré par un conseil administratif composé de représentants des départements ministériels, d’établissements publics, de banques et de coopératives et présidé par Madame Nadia Fettah Alaoui ministre du Tourisme, de l’Artisanat, du Transport Aérien et de l’Economie Socialel assure notamment :
+
+        </p>
+
+
+      </div>
+    </div>
+</section>
+
+<section id="counts" class="counts">
+    <div class="container">
+
+      <div class="row">
+        <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+          <img src="img/counts-img.svg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <ul>
+                <br><i class="ri-check-double-line"></i> Elaboration de la stratégie annuelle de sensibilisation </li>
+                <br><i class="ri-check-double-line"></i> Elaboration du programme de sensibilisation </li>
+                <br><i class="ri-check-double-line"></i> Assistance juridique des coopératives </li>
+                <br><i class="ri-check-double-line"></i>  S'assurer de la vocation coopérative des projets coopératifs enregistrés auprès des registres locaux des coopératives. </li>
+                <br><i class="ri-check-double-line"></i> Tenue du registre central  </li>
+                <br><i class="ri-check-double-line"></i> Elaboration des statistiques relatives aux coopératives </li>
+                <br><i class="ri-check-double-line"></i> Préparation du programme annuel de formation </li>
+                <br><i class="ri-check-double-line"></i> Elaboration de la stratégie de formation    </li>
+                <br><i class="ri-check-double-line"></i>  Gestion de la comptabilité </li>
+                <br><i class="ri-check-double-line"></i> Génération et contrôle de la paie </li>
+                <br><i class="ri-check-double-line"></i> Gestion de la taxe parafiscale  </li>
+                <br><i class="ri-check-double-line"></i> Gestion du plan de formation du personnel </li>
+              </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <%- include("../partials/footer"); -%>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+    });
+  </script>

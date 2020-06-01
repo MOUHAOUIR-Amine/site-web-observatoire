@@ -1,0 +1,72 @@
+<% if (auth==1) { %>
+<%- include('../partials/login_header'); -%>"
+<% }else { %>
+<%- include('../partials/header'); -%>
+<% } %>
+<br>
+
+
+  <section id="more-services" class="services">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Mission</h2>
+        <p>Retrouvez toutes les missions de l'observatoire</p>
+      </div>
+      <br>
+
+      <div >
+
+        <div class="section-title" data-aos="fade-up"></div>
+        <p>
+
+            L’Observatoire Marocain des coopératives est une structure de l’ODCO, de la Coopération et de la Communication, qui   veille au  recueil  des statistiques des coopératives détaillées et complètes,  en lui permettant, entre autres,  de  suivre rigoureusement   l’évolution des secteurs des coopératives et de mettre à la disposition des  décideurs  des informations statistiques fiables, nécessaires à  toute prise de  décision politique en matière  de la coopération. <br>
+          <br> Il assure notamment :
+
+        </p>
+
+
+      </div>
+    </div>
+</section>
+
+<section id="counts" class="counts">
+    <div class="container">
+
+      <div class="row">
+        <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+          <img src="img/counts-img.svg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <ul>
+                <i class="ri-check-double-line"></i> La collecte et la centralisation des statistiques des cooperatives </li>
+                <br><i class="ri-check-double-line"></i> L’alignement de ces statistiques avec les standards internationaux </li>
+                <br><i class="ri-check-double-line"></i> La mise en place d’un système informatique pour la collecte et la diffusion de ces statistiques </li>
+                <br><i class="ri-check-double-line"></i> L’établissement des études prospectives sur les cooperatives </li>
+                <br><i class="ri-check-double-line"></i> La mise en place  d’un système de veille stratégique  </li>
+                <br><i class="ri-check-double-line"></i>  La publication  de différentes statistiques et rapports produits </li>
+                <br><i class="ri-check-double-line"></i> La valorisation de l’information  en mettant en place un portail permettant de communiquer les différents statistiques et rapports produits  </li>
+
+                <br><i class="ri-check-double-line"></i> La consolidation du système statistique par la  réalisation des enquêtes sectorielles sur la declaration des cooperatives </li>
+                <br><i class="ri-check-double-line"></i> L’élaboration des études d’impacts socioéconomiques et environnementaux des mesures prises dans le cadre de la stratégie sociale et solidaire </li>
+                <br><i class="ri-check-double-line"></i> Le développement de coopération  et de synergie avec les partenaires nationaux en matière des statistiques des cooperatives</li>
+              </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <%- include("../partials/footer"); -%>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+    });
+  </script>
