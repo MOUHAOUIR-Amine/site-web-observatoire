@@ -2864,5 +2864,38 @@ app.get("/modifier_compte", function(req, res) {
   res.render("modifier_compte",{auth:auth});
 });
 
+app.post("/modifier_compte",function(req,res) {
+  User.updateOne({email:req.body.email},{
+    nom:req.body.nom,
+    prenom:req.body.prenom,
+    email:req.body.email,
+    password:req.body.password,
+    domaineActivite:req.body.domaineActivite,
+    phoneNumber:req.body.phoneNumber
+  },function(err) {
+    if (err) {
+      console.log(err);
+    }else {
+      console.log("updated");
+      res.redirect('/')
+    }
+  })
+})
+
+app.get("/deletecpt",function(req,res) {
+  res.render("delete_compte",{auth:auth})
+})
+app.post("/deletecpt",function(req,res) {
+  User.deleteOne({email:req.body.email,password:req.body.password},function(err) {
+    if (err) {
+      console.log(err);
+    }else {
+      auth=0
+      res.redirect('/')
+    }
+  })
+})
+
+
 
 ////////////////////////////
